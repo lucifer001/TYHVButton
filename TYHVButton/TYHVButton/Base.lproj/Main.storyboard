@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpy-fR-BhI">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QuR-eg-bvU">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="0.5"/>
+                                        <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="4aV-Ws-wKU"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fw7-8B-dxn" userLabel="Button1" customClass="TYHVButton">
+                                        <rect key="frame" x="0.0" y="0.5" width="83" height="48.5"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <state key="normal" title="首页" image="home_home">
+                                            <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="selected" image="home_home_p">
+                                            <color key="titleColor" red="0.35294117650000001" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="highlighted" image="home_home_p">
+                                            <color key="titleColor" red="0.35294117650000001" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickItemBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oST-pR-O6c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neI-M0-jFd" userLabel="Button2" customClass="TYHVButton">
+                                        <rect key="frame" x="83" y="0.5" width="82.5" height="48.5"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <state key="normal" title="消息" image="home_msg">
+                                            <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="selected" image="home_msg_p">
+                                            <color key="titleColor" red="0.35294117650000001" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="highlighted" image="home_msg_p">
+                                            <color key="titleColor" red="0.35294117650000001" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickItemBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xpk-ux-fwV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgW-za-z2h" userLabel="Button3" customClass="TYHVButton">
+                                        <rect key="frame" x="248.5" y="0.5" width="82.5" height="48.5"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <state key="normal" title="发现" image="home_order">
+                                            <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="selected" image="home_order_p">
+                                            <color key="titleColor" red="0.35294117650000001" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="highlighted" image="home_home_p">
+                                            <color key="titleColor" red="0.35294117650000001" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickItemBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R8S-Z6-Sde"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1K-mv-imP" userLabel="Button4" customClass="TYHVButton">
+                                        <rect key="frame" x="331" y="0.5" width="83" height="48.5"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <state key="normal" title="我的" image="home_mine">
+                                            <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="selected" image="home_mine_p">
+                                            <color key="titleColor" red="0.35294117650000001" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="highlighted" image="home_mine_p">
+                                            <color key="titleColor" red="0.35294117650000001" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickItemBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZqO-MU-Yqe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EwZ-SY-adI" userLabel="Button0" customClass="TYHVButton">
+                                        <rect key="frame" x="165.5" y="0.5" width="83" height="48.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <state key="normal" title="发布" image="home_send">
+                                            <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" image="home_send_p">
+                                            <color key="titleColor" red="0.35294117650000001" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="highlighted" image="home_send_p"/>
+                                        <connections>
+                                            <action selector="clickItemBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wNg-d8-DWf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="x1K-mv-imP" firstAttribute="leading" secondItem="tgW-za-z2h" secondAttribute="trailing" id="1FF-WL-O1V"/>
+                                    <constraint firstItem="fw7-8B-dxn" firstAttribute="top" secondItem="QuR-eg-bvU" secondAttribute="bottom" id="5dT-oS-4c6"/>
+                                    <constraint firstAttribute="bottom" secondItem="neI-M0-jFd" secondAttribute="bottom" id="5rw-pX-WOs"/>
+                                    <constraint firstItem="EwZ-SY-adI" firstAttribute="top" secondItem="QuR-eg-bvU" secondAttribute="bottom" id="IBw-UD-oRs"/>
+                                    <constraint firstAttribute="height" constant="49" id="Iut-BY-z9r"/>
+                                    <constraint firstAttribute="trailing" secondItem="x1K-mv-imP" secondAttribute="trailing" id="Kjs-kn-ToA"/>
+                                    <constraint firstItem="QuR-eg-bvU" firstAttribute="leading" secondItem="kpy-fR-BhI" secondAttribute="leading" id="M9p-js-EiP"/>
+                                    <constraint firstItem="EwZ-SY-adI" firstAttribute="width" secondItem="fw7-8B-dxn" secondAttribute="width" id="OYD-V2-Jgv"/>
+                                    <constraint firstItem="QuR-eg-bvU" firstAttribute="top" secondItem="kpy-fR-BhI" secondAttribute="top" id="Q4G-Z2-2qj"/>
+                                    <constraint firstItem="EwZ-SY-adI" firstAttribute="leading" secondItem="neI-M0-jFd" secondAttribute="trailing" id="SCS-yB-2vh"/>
+                                    <constraint firstItem="neI-M0-jFd" firstAttribute="top" secondItem="QuR-eg-bvU" secondAttribute="bottom" id="TeB-7A-5gS"/>
+                                    <constraint firstAttribute="bottom" secondItem="EwZ-SY-adI" secondAttribute="bottom" id="VdB-Fn-Xcf"/>
+                                    <constraint firstItem="x1K-mv-imP" firstAttribute="width" secondItem="fw7-8B-dxn" secondAttribute="width" id="WXI-uW-1fE"/>
+                                    <constraint firstAttribute="bottom" secondItem="fw7-8B-dxn" secondAttribute="bottom" id="dEn-rx-OKf"/>
+                                    <constraint firstItem="neI-M0-jFd" firstAttribute="leading" secondItem="fw7-8B-dxn" secondAttribute="trailing" id="hqC-bR-QVv"/>
+                                    <constraint firstItem="x1K-mv-imP" firstAttribute="top" secondItem="QuR-eg-bvU" secondAttribute="bottom" id="jyc-x2-bN3"/>
+                                    <constraint firstItem="tgW-za-z2h" firstAttribute="width" secondItem="fw7-8B-dxn" secondAttribute="width" id="lVy-qZ-Yqg"/>
+                                    <constraint firstItem="fw7-8B-dxn" firstAttribute="leading" secondItem="kpy-fR-BhI" secondAttribute="leading" id="nKD-Y8-WQS"/>
+                                    <constraint firstAttribute="bottom" secondItem="x1K-mv-imP" secondAttribute="bottom" id="oQQ-PA-txm"/>
+                                    <constraint firstItem="tgW-za-z2h" firstAttribute="leading" secondItem="EwZ-SY-adI" secondAttribute="trailing" id="rkk-zh-2hJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="tgW-za-z2h" secondAttribute="bottom" id="uZ7-sM-DJi"/>
+                                    <constraint firstItem="tgW-za-z2h" firstAttribute="top" secondItem="QuR-eg-bvU" secondAttribute="bottom" id="wMb-Nh-LqZ"/>
+                                    <constraint firstItem="neI-M0-jFd" firstAttribute="width" secondItem="fw7-8B-dxn" secondAttribute="width" id="wWT-NB-sKW"/>
+                                    <constraint firstAttribute="trailing" secondItem="QuR-eg-bvU" secondAttribute="trailing" id="wd1-aZ-N8J"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kpy-fR-BhI" secondAttribute="trailing" id="6sw-H4-3eo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kpy-fR-BhI" secondAttribute="bottom" id="DSk-17-myW"/>
+                            <constraint firstItem="kpy-fR-BhI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="G49-sx-BBI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lineView" destination="QuR-eg-bvU" id="PCh-la-c65"/>
+                        <outlet property="tabbarView" destination="kpy-fR-BhI" id="pB4-Cj-2a3"/>
+                        <outletCollection property="itemBtnAry" destination="fw7-8B-dxn" id="gtg-o7-ggB"/>
+                        <outletCollection property="itemBtnAry" destination="neI-M0-jFd" id="0Qc-th-95t"/>
+                        <outletCollection property="itemBtnAry" destination="tgW-za-z2h" id="Wom-Mr-5nT"/>
+                        <outletCollection property="itemBtnAry" destination="x1K-mv-imP" id="mK3-qk-gjJ"/>
+                        <outletCollection property="itemBtnAry" destination="EwZ-SY-adI" id="gKr-sM-egL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home_home" width="23" height="23"/>
+        <image name="home_home_p" width="23" height="23"/>
+        <image name="home_mine" width="23" height="23"/>
+        <image name="home_mine_p" width="23" height="23"/>
+        <image name="home_msg" width="23" height="23"/>
+        <image name="home_msg_p" width="23" height="23"/>
+        <image name="home_order" width="23" height="23"/>
+        <image name="home_order_p" width="23" height="23"/>
+        <image name="home_send" width="23" height="23"/>
+        <image name="home_send_p" width="23" height="23"/>
+    </resources>
+</document>
